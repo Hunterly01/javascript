@@ -1,18 +1,18 @@
-function GuessNumberGame(){
+//function GuessNumberGame(){
 let secret = 8;
 const userInput = require("prompt-sync")();
- while(userInput != 8){
-let userGuess = userInput("Guess a number:");
- if(userGuess == secret){
-	return "Correct";
+let userGuess = userInput("enter a number:");
+while(userGuess != 8){
+userGuess = userInput("Try again:");
+} 
+if(userGuess == secret){
+	console.log("Correct");
 } else { 
-	return "Try again!";
-}
-}
+	console.log("Try again!");
 }
 
 
 
-let input = 8;
-console.log(GuessNumberGame(input));
+//let input = 8;
+//console.log(GuessNumberGame(input));
 
